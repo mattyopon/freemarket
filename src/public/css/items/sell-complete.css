@@ -1,0 +1,239 @@
+/* items/sell-complete.css - 商品登録完了画面のスタイル */
+
+.item-sell-complete-page {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: var(--color-background);
+}
+
+/* ヘッダー */
+.item-sell-complete-page__header {
+    position: relative;
+    width: 100%;
+    height: 82px;
+    background: var(--color-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+
+.item-sell-complete-page__logo {
+    position: absolute;
+    left: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.item-sell-complete-page__logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.item-sell-complete-page__logo-img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.item-sell-complete-page__search {
+    flex: 0 0 auto;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-sell-complete-page__search-form {
+    width: 100%;
+}
+
+.item-sell-complete-page__search-wrapper {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    align-items: center;
+}
+
+.item-sell-complete-page__search-input {
+    flex: 1;
+    padding: 10px 16px;
+    border: 1px solid var(--color-gray-border);
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: var(--color-background);
+    color: var(--color-black);
+    box-sizing: border-box;
+    height: 40px;
+}
+
+.item-sell-complete-page__search-input::placeholder {
+    color: var(--color-gray-text);
+}
+
+.item-sell-complete-page__search-button {
+    padding: 10px 24px;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    white-space: nowrap;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    height: 40px;
+}
+
+.item-sell-complete-page__search-button:hover {
+    background-color: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+}
+
+.item-sell-complete-page__search-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 85, 85, 0.3);
+}
+
+.item-sell-complete-page__nav {
+    position: absolute;
+    right: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.item-sell-complete-page__nav-link {
+    color: var(--color-background);
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.item-sell-complete-page__nav-link-button {
+    background: none;
+    border: none;
+    color: var(--color-background);
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s;
+    padding: 0;
+}
+
+.item-sell-complete-page__nav-button {
+    padding: 8px 20px;
+    background: var(--color-background);
+    border: 1px solid var(--color-black);
+    border-radius: 4px;
+    color: var(--color-black);
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+/* コンテナ */
+.item-sell-complete-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px 25px;
+    text-align: center;
+}
+
+.item-sell-complete-message {
+    margin-bottom: 60px;
+}
+
+.item-sell-complete-message__title {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: var(--color-black);
+    margin: 0 0 20px 0;
+}
+
+.item-sell-complete-message__text {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--color-black);
+    margin: 0;
+}
+
+.item-sell-complete-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.item-sell-complete-actions__button {
+    display: inline-block;
+    padding: 20px 40px;
+    background: var(--color-primary);
+    border-radius: 4px;
+    color: var(--color-background);
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.item-sell-complete-actions__button:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.item-sell-complete-actions__link {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--color-link);
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.item-sell-complete-actions__link:hover {
+    color: var(--color-link-hover);
+}
+

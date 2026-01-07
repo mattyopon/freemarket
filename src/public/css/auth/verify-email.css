@@ -1,0 +1,192 @@
+/* verify-email.css - メール認証誘導画面のスタイル */
+
+/* メール認証誘導画面 */
+.verify-email-page {
+    position: relative;
+    width: 100%;
+    min-height: 982px;
+    max-width: 1512px;
+    background: var(--color-background);
+    margin: 0 auto;
+    padding-top: 82px; /* 固定ヘッダーの高さ分のパディング */
+}
+
+/* auth-header */
+.verify-email-page__header {
+    position: fixed;
+    width: 100%;
+    height: 82px;
+    left: 0px;
+    top: 0px;
+    background: var(--color-black);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.verify-email-page__logo {
+    display: flex;
+    align-items: center;
+}
+
+.verify-email-page__logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.verify-email-page__logo-img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+}
+
+/* メール認証コンテナ */
+.verify-email-container {
+    position: relative;
+    width: 680px;
+    min-height: 400px;
+    margin: 200px auto 0;
+    background: var(--color-background);
+    padding: 60px 40px 40px;
+    text-align: center;
+}
+
+.verify-email-message {
+    margin-bottom: 40px;
+}
+
+.verify-email-message__text {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--color-black);
+    margin: 0 0 12px 0;
+}
+
+.verify-email-actions {
+    margin-bottom: 30px;
+}
+
+.verify-email-actions__button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: var(--color-gray-light);
+    border: 1px solid var(--color-black);
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--color-black);
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.verify-email-actions__button:hover {
+    background-color: var(--color-gray-medium-light);
+}
+
+.verify-email-resend {
+    margin-top: 20px;
+}
+
+.verify-email-resend__link {
+    background: none;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--color-link);
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.verify-email-resend__link:hover {
+    color: var(--color-link-hover);
+}
+
+/* レスポンシブ対応（PC 1400-1540px） */
+@media (min-width: 1400px) and (max-width: 1540px) {
+    .verify-email-page {
+        width: 100%;
+        max-width: 1540px;
+        padding-top: 82px;
+    }
+
+    .verify-email-page__header {
+        width: 100%;
+        max-width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .verify-email-container {
+        width: 680px;
+        max-width: 680px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 200px;
+    }
+}
+
+/* より小さい画面（1400px未満）の対応 */
+@media (max-width: 1399px) {
+    .verify-email-page {
+        width: 100%;
+        max-width: 100%;
+        min-height: 100vh;
+        padding-top: 82px;
+    }
+
+    .verify-email-page__header {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .verify-email-container {
+        width: 90%;
+        max-width: 680px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 150px;
+    }
+}
+
+/* より大きい画面（1541px以上）の対応 */
+@media (min-width: 1541px) {
+    .verify-email-page {
+        width: 1512px;
+        max-width: 1512px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 82px;
+    }
+
+    .verify-email-page__header {
+        width: 100%;
+        max-width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .verify-email-container {
+        width: 680px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 200px;
+    }
+}
+

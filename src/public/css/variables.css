@@ -1,0 +1,49 @@
+:root {
+    /* 基本色 */
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+
+    /* アクセントカラー */
+    --color-primary: #FF5555;
+    --color-primary-dark: #FF3333;
+
+    /* グレースケール */
+    --color-gray-light: #F5F5F5;
+    --color-gray-medium: #E0E0E0;
+    --color-gray-dark: #CCCCCC;
+    --color-gray-text: #999999;
+    --color-gray-border: #5F5F5F;
+    --color-gray-text-dark: #333333;
+
+    /* 背景色 */
+    --color-background: #FFFFFF;
+    --color-background-light: #FAFAFA;
+    --color-background-success: #EEFFEE;
+    --color-background-error: #FFEEEE;
+    --color-background-success-light: #E8F5E9;
+
+    /* テキスト色 */
+    --color-text: #000000;
+    --color-text-light: #CCCCCC;
+
+    /* 成功色 */
+    --color-success: #00AA00;
+    --color-success-border: #55FF55;
+    --color-success-bg: #4CAF50;
+
+    /* リンク色 */
+    --color-link: #0073CC;
+    --color-link-hover: #0052A3;
+    --color-link-alt: #0066CC;
+
+    /* 成功色（追加） */
+    --color-success-light: #E8F5E9;
+    --color-success-text: #2E7D32;
+    --color-success-hover: #45A049;
+
+    /* グレー（追加） */
+    --color-gray-extra-light: #FAFAFA;
+    --color-gray-border-light: #EEEEEE;
+    --color-gray-medium-light: #E5E5E5;
+}
+
